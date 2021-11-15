@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>심유정의 홈페이지입니다.</title>
+        <link rel="stylesheet" href="./assets/css/mysite.css">
+        <link rel="stylesheet" href="./assets/css/board.css">
+        <link rel="stylesheet" href="./assets/css/signup.css">
+        
+    </head>
+
+    <body>
+        <div id="wrap">
+            <div id="header" class="clearfix">
+                <h1>Mysite</h1>
+                <ul class="clearfix">
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
+                </ul>
+            </div>
+       
+            <div id="nav">
+                <ul class="clearfix">
+                    <li>입사지원서</li>
+                    <li>게시판</li>
+                    <li>갤러리</li>
+                    <li>방명록</li>
+                </ul>
+            </div>
+       
+            <!--contents-->
+            <div id="contents2" class="clearfix"><!--padding값상관없이 글자크기만큼은 높이나올수있게 클리어픽스넣어줌 그래야 풋터가 밑으로 내려감-->
+                 <!--aside-->
+                <div id="aside">
+                    <h2>게시판</h2>
+
+                    <ul>
+                        <li>일반 게시판</li>
+                        <li>댓글 게시판</li>
+                        <li>첨부 게시판</li>
+
+                    </ul>
+
+                </div>
+                 <!--/aside-->
+
+                 <!--main-->
+                 <div id="main">
+                    <div id="main-header" class="clearfix">
+                        <h3>회원가입</h3>
+                      
+                        <ul class="clearfix">
+                           <li>홈</li>
+                           <li>게시판</li>
+                           <li class="last">일반게시판</li>
+                        </ul>
+                   
+                    </div>
+                    
+                    <!--main-body-->
+                    <div id="signup" class="clearfix">
+                        <!--form-->
+                        <form action="" method="get">
+                            
+                            <!--id-->
+                            <div class="form-group">
+                                <label class="form-text" for="u-id">아이디</label>
+                                <input type="text" id="u-id" name="" value="" placeholder="아이디를 입력하세요">
+                            </div>
+                            <!--/id-->
+
+                            <!--password-->
+                            <div class="form-group">
+                                <label class="form-text" for="u-pwd">비밀번호</label>
+                                <input type="text" id="u-pwd" name="" value="" placeholder="패스워드를 입력하세요">
+                            </div>
+                            <!--/password-->
+
+                            <!--name-->
+                            <div class="form-group">
+                                <label class="form-text" for="u-name">이름</label>
+                                <input type="text" id="u-name" name="" value="" placeholder="이름을 입력하세요">
+                            </div>
+                            <!--/name-->
+
+                            <!--img-->
+                            <div class="form-group">
+                                <label class="form-text">프로필사진</label>
+                                <input type="file" name="" value="">
+                            </div>
+                            <!--/img-->
+
+                            <!--adress-->
+                            <div class="form-group">
+                                <span class="form-text">주소</span>
+                                <input type="text" id="zip_code" placeholder="우편번호">
+                                <input type="button" onclick="execDaumPostcode()" value="우편번호찾기">
+                                <br>
+                                <div>
+                                    <input class="form-adress" type="text" id="roadAddress" placeholder="주소">
+                                </div>
+                            </div>
+                            <!--/adress-->
+
+                            <!--mobile-->
+                            <div class="form-group">
+                                <span class="form-text">이동통신사</span>
+                                <select id="select-boardType" name="">
+                                    <option value="" selected="selected">선택해주세요</option>
+                                    <option value="">SKT</option>
+                                    <option value="">KT</option>
+                                    <option value="">LG</option>
+                                    <option value="">알뜰폰</option>
+                                </select>
+                            </div>
+                            <!--/mobile-->
+                            
+                            <!--age-->
+                            <div class="form-group">
+                                <span class="form-text">나이</span>
+                                
+                                <label for="rdo-ten">10대</label>
+                                <input id="rdo-ten" type="radio" name="etc" value="">
+
+                                <label for="rdo-twn">20대</label>
+                                <input id="rdo-twn" type="radio" name="etc" value="" checked="checked">
+
+                                <label for="rdo-tht">30대</label>
+                                <input id="rdo-tht" type="radio" name="etc" value="">
+
+                                <label for="rdo-ft">40대</label>
+                                <input id="rdo-ft" type="radio" name="etc" value="">
+
+                                <label for="rdo-etc">기타</label>
+                                <input id="rdo-etc" type="radio" name="etc" value="">
+                            </div>
+                            <!--/age-->
+
+                            <!--hobby-->
+                            <div class="form-group">
+                                <span class="form-text">취미</span>
+
+                                <label for="chk-bk">독서</label>
+                                <input id="chk-bk" type="checkbox" name="" value="" checked="checked">
+
+                                <label for="chk-mic">음악</label>
+                                <input id="chk-mic" type="checkbox" name="" value="">
+
+                                <label for="chk-trip">여행</label>
+                                <input id="chk-trip" type="checkbox" name="" value="">
+
+                                <label for="chk-mov">영화</label>
+                                <input id="chk-mov" type="checkbox" name="" value="">
+
+                                <label for="chk-cord">코딩</label>
+                                <input id="chk-cord" type="checkbox" name="" value="">
+
+                                <label for="chk-etc">기타</label>
+                                <input id="chk-etc" type="checkbox" name="" value="">
+                            </div>
+                            <!--/hobby-->
+
+                            <!--intro-->
+                            <div class="form-group clearfix">
+                                <span class="form-text form-intro">자기소개</span>
+                                <textarea id="text-content"></textarea>
+                            </div>
+                            <!--/intro-->
+
+                            <!--button-->
+                            <div class="btn-area clearfix">
+                                <button class="btn btn-gray" type="submit">등록</button>
+                                <button class="btn btn-gray" type="reset">초기화</button> 
+                            </div>
+                            <!--/button-->
+
+                        </form>
+                        <!--/form-->
+                    </div>
+                    <!--/main-body-->
+
+                </div>
+                <!-- /main -->
+            </div>
+            <!-- /contents -->
+
+            <!-- footer -->
+            <div id="footer">
+                Copyright (c) 2021 심유정. All right reserved
+            </div>
+            <!-- /footer -->
+
+        </div>
+        <!--/wrap -->
+    </body>
+
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+    
+    <head>
+         <meta charset="UTF-8">
+         <title>html 기본태그</title>
+    </head>
+    
+    <body>
+        목차
+        <ol>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex01.html"> h1~h6태그</a></li><!--target="self"는 생략가능-->
+            <li><a href="E:\javaStudy\workspace_front\html01/ex02.html" target="_self">p br hr strong em태그</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex03.html" target="_self">list태그</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex04.html" target="_self">하이퍼링크 img태그</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex05.html" target="_self">table tr td 태그</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex06.html" target="_self">table 합치기</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex07.html" target="_self">thead tbody tfoot</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex08.html" target="_self">테이블 과제</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex10.html" target="_self">form 태그</a></li>
+        </ol>
+
+        <h1>html 기본태그</h1>
+        <h2>chap7. thead tbody tfoot</h2>
+
+        <table border="4">
+            <colgroup><!--가로(열)을 묶음-->
+                <col style="width:120px">
+                <col style="width:60px">
+                <col style="width:60px">
+                <col style="width:80px">
+                <col style="width:100px">
+            </colgroup>
+            <caption>제주특별자치도 학교현황</caption>
+            <thead>
+                <tr><!--괄호존재하게하는거,눈에보이려면 border--><!--알트쉬프트누르면 같은열 문자바뀜-->
+                    <th>구분</th><!--데이터값이 바뀌지않는것들은 th로 바꿔준다-->
+                    <th>학교수</th>
+                    <th>학급수</th>
+                    <th>학생수</th>
+                    <th>교원수</th>
+                </tr>
+            </thead>    
+            <tbody>
+                <tr>
+                    <th>유치원</th>
+                    <td>117</td>
+                    <td>252</td>
+                    <td>5547</td>
+                    <td>474</td>
+                </tr>
+                <tr>
+                    <th>초등학교</th>
+                    <td>111</td>
+                    <td>1720</td>
+                    <td>37686</td>
+                    <td>2632</td>
+                </tr>
+                <tr>
+                    <th>중학교</th>
+                    <td>44</td>
+                    <td>699</td>
+                    <td>21274</td>
+                    <td>1412</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>합계</th>
+                    <td>272</td>
+                    <td>2671</td>
+                    <td>64507</td>
+                    <td>4518</td>    
+                </tr>
+            </tfoot>
+
+
+        </table>
+
+    </body>
+</html>

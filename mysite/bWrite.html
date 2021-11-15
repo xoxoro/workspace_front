@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>심유정의 홈페이지 입니다.</title>
+        <link rel="stylesheet"  href="./assets/css/mysite.css">
+        <link rel="stylesheet"  href="./assets/css/board.css">
+    </head>
+
+    <body>
+        <!--wrap -->
+        <div id="wrap">
+            <!-- header -->
+            <div id="header" class="clearfix">               
+                <h1>MySite</h1>    
+                <ul class="clearfix">
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
+                </ul>
+            </div>
+            <!-- /header -->
+
+            <!-- nav -->
+            <div id="nav">
+                <ul class="clearfix">
+                    <li>입사지원서</li>
+                    <li>게시판</li>
+                    <li>갤러리</li>
+                    <li>방명록</li>
+                </ul>
+            </div>
+            <!-- /nav -->
+
+            <!-- contents -->
+            <div id="contents2" class="clearfix">
+                <!-- aside -->
+                <div id="aside">
+                    <h2>게시판</h2>
+
+                    <ul>
+                        <li><a href="">일반 게시판</a></li>    
+                        <li>댓글 게시판</li>    
+                        <li>첨부 게시판</li>    
+                    </ul>
+                </div>
+                <!-- /aside -->
+
+                <!-- main -->
+                <div id="main">
+                    <div id="main-header" class="clearfix">
+                        <h3>일반게시판</h3>
+                      
+                        <ul class="clearfix">
+                           <li>홈</li>
+                           <li>게시판</li>
+                           <li class="last">일반게시판</li>
+                        </ul>
+                   
+                    </div>
+
+                    <div id="bWrite">
+                        <form action="" method="">
+
+                            <!-- 게시판선택 -->
+                            <div class="form-group">
+                                <label class="form-text" for="boardType">게시판선택</label>
+                                <select id="select-boardType" name="">
+                                    <option value="" selected="selected">게시판을 선택하세요</option>
+                                    <option value="">공지사항</option>
+                                    <option value="">일반게시판</option>
+                                    <option value="">익명게시판</option>
+                                </select>
+                            </div> 
+                            <!-- /게시판선택 -->   
+
+                            <!-- 제목 -->
+                            <div class="form-group">
+                                <label class="form-text" for="title">제목</label>
+                                <input id="txt-title" type="text" name="" value="">
+                            </div>
+                            <!-- /제목 -->
+
+                            <!-- 비밀번호 -->
+                            <div class="form-group">
+                                <label class="form-text" for="password">비밀번호</label>
+                                <input id="txt-password" type="password" name="" value="">
+                            </div>
+                            <!-- /비밀번호 -->
+
+                            <!-- 공개범위 -->
+                            <div class="form-group">
+                                <span class="form-text">공개범위</span>
+                                
+                                <label for="rdo-me">본인</label>
+                                <input id="rdo-me" type="radio" name="scope" value="">
+
+                                <label for="rdo-login">로그인회원</label>
+                                <input id="rdo-login" type="radio" name="scope" value="">
+
+                                <label for="rdo-friend">친구</label>
+                                <input id="rdo-friend" type="radio" name="scope" value="">
+
+                                <label for="rdo-all">전체</label>
+                                <input id="rdo-all" type="radio" name="scope" value="">
+                            </div>
+                            <!-- /공개범위 -->
+
+                            <!-- 허용범위 -->
+                            <div class="form-group">
+                                <span class="form-text">허용범위</span>
+
+                                <label for="chk-reply">댓글허용</label>
+                                <input id="chk-reply" type="checkbox" name="" value="">
+
+                                <label for="chk-answer">답글허용</label>
+                                <input id="chk-answer" type="checkbox" name="" value="">
+                                
+                                <label for="chk-like" >좋아요허용</label>
+                                <input id="chk-like" type="checkbox" name="" value="">
+                            </div> 
+                            <!-- /허용범위 -->
+
+                            <!-- 내용 -->
+                            <div class="form-group">
+                                <textarea id="text-content"></textarea>
+                            </div>
+                            <!-- /내용 -->
+
+                            <!-- 첨부파일-->
+                            <div class="form-group">
+                                <label class="form-text">첨부파일</label>
+                                <input type="file" name="" value="">
+                            </div>
+                            <!-- /첨부파일-->
+
+                            <div class="btn-area" >
+                                <button class="btn btn-gray" type="submit">등록</button>
+                                <button class="btn btn-red" type="reset">삭제</button>
+                                <button class="btn btn-blue" type="reset">수정</button>
+                                <!-- <a class="btn" href="">회원가입</a> -->
+                            </div>
+
+                        </form>
+                        
+                    </div>
+                
+                </div>
+                <!-- /main -->
+            </div>
+            <!-- /contents -->
+
+            <!-- footer -->
+            <div id="footer">
+                Copyright (c) 2021 심유정. All right reserved
+            </div>
+            <!-- /footer -->
+
+        </div>
+        <!--/wrap -->
+    </body>
+
+
+</html>

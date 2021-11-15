@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+    
+    <head>
+         <meta charset="UTF-8">
+         <title>html 기본태그</title>
+    </head>
+    
+    <body>
+        목차
+        <ol>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex01.html"> h1~h6태그</a></li><!--target="self"는 생략가능-->
+            <li><a href="E:\javaStudy\workspace_front\html01/ex02.html" target="_self">p br hr strong em태그</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex03.html" target="_self">list태그</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex04.html" target="_self">하이퍼링크 img태그</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex05.html" target="_self">table tr td 태그</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex06.html" target="_self">table 합치기</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex07.html" target="_self">thead tbody tfoot</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex08.html" target="_self">테이블 과제</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex10.html" target="_self">form 태그</a></li>
+        </ol>
+
+        <h1>html 기본태그</h1>
+        <h2>chap6. table 합치기</h2>
+        
+        <p>테이블 가로 합치기</p>
+        <table border="1">
+            <tr>
+                <td>1,1</td>
+                <td>1,2</td>
+                <td>1,3</td>
+            </tr>
+            <tr>
+                <td>2,1</td>
+                <td colspan="2">2,2</td><!--colspan 가로로 두칸을 쓰겠다-->
+                
+            </tr>
+            <tr>
+                <td>3,1</td>
+                <td>3,2</td>
+                <td>3,3</td>
+            </tr>
+        </table>
+        <br>
+        <p>테이블 세로 합치기</p>
+        <table border="1">
+            <tr>
+                <td>1,1</td>
+                <td>1,2</td>
+                <td>1,3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2,1</td><!--rowspan 세로로 두칸을 쓰겠다-->
+                <td>2,2</td>
+                <td>2,3</td>
+
+                
+            </tr>
+            <tr>
+        
+                <td>3,2</td>
+                <td>3,3</td>
+            </tr>
+        </table>
+        <p>테이블 가로세로 합치기</p>
+        <table border="1">
+            <tr>
+                <td>1,1</td>
+                <td>1,2</td>
+                <td>1,3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2,1</td>
+                <td colspan="2">2,2</td>
+            <tr>
+                <td>3,1</td>
+                <td>3,2</td>
+                
+            </tr>
+        </table>
+
+        <br>   
+        <p>테이블 합치기 연습문제</p>
+        <table border="1">
+            <tr>
+                <td colspan="2">모집직군</td>
+                <td>모집전공</td>
+                <td>비고</td>
+            </tr>
+            <tr>
+                <td colspan="2">생산기술직</td>
+                <td>화학공학</td>
+                <td rowspan="3">전공관련 자격증 우대</td>
+            </tr>
+            <tr>
+                <td rowspan="2">생산지원직</td>
+                <td>공무</td>
+                <td>기계,전기</td>
+            </tr>
+            <tr>
+                <td>안전환경</td>
+                <td>안전,환경</td>
+            </tr>
+            <tr>
+                <td colspan="2">연구개발직</td>
+                <td>화학,화학공학</td>
+                <td>석사</td>
+            </tr>
+
+        </table>
+
+
+    </body>    
+            

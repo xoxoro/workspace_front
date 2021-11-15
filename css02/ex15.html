@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>사이트경로 과제만들기</title>
+        <!-- 스타일시트자리 -->
+        <style>
+            ol {
+                list-style-type: none;
+            }
+
+            ol>li {
+                float: left;
+
+                /* border: 1px solid #000000; */
+            }
+
+            ol>li:after{
+                content: ">";
+                padding: 0px 5px 0px 5px;
+            }
+
+            ol>li.last:after {
+                content: "";
+                
+            }
+
+</style>
+    </head>
+
+    <body>
+        <ol>
+            <li>홈</li>
+            <li>게시판</li>
+            <li>일반게시판</li>
+            <li class="last">리스트</li>
+        </ol>
+
+    </body>
+
+</html>

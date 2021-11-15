@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    
+    <head>
+         <meta charset="UTF-8">
+         <title>html5</title>
+    </head>
+    
+    <body>
+        목차
+        <ol>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex01.html"> h1~h6태그</a></li><!--target="self"는 생략가능-->
+            <li><a href="E:\javaStudy\workspace_front\html01/ex02.html" target="_self">p br hr strong em태그</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex03.html" target="_self">list태그</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex04.html" target="_self">하이퍼링크 img태그</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex05.html" target="_self">table tr td 태그</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex06.html" target="_self">table 합치기</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex07.html" target="_self">thead tbody tfoot</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex08.html" target="_self">테이블 과제</a></li>
+            <li><a href="E:\javaStudy\workspace_front\html01/ex10.html" target="_self">form 태그</a></li>
+        </ol>
+   
+
+        <hr>
+        <h1>html 기본태그</h1>
+        <h2>chap4. 하이퍼링크 img태그</h2>
+
+         <img src="E:\javaStudy\workspace_front\html01\img/jung.jpg" width="100px" height="50px">
+         <img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png">
+         <img src="img/jung.jpg">
+        <!--img src="./img/subimg/yoo.jpg"-->
+
+        <img src="../upimg/yoo.jpg" alt="유재석 사진"> <!--alt를 넣는이유는 이미지가 깨졌을 경우 무슨 이미지였는지 설명하려고 태그다는거-->
+
+        <br>
+        <a href="E:\javaStudy\workspace_front\html01/ex01.html" target="_blank">1번문서로 이동</a>
+        <br>
+        <a href="./ex02.html" target="_view">2번문서로 이동</a> <!--target view=새창으로 띄웠을때 그창에서 계속 띄울수있게 하는거.view라는 이름은 임의의 정수라서 다른 글자로 바꿔도 됨.target="_blank" 단순히 계속 새탭으로 띄우는거,target="_self"는 같은탭에서 뜸-->
+        <br>
+        <a href="https://www.daum.net/" target="_view">
+            <img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png" alt="다음" ></a>
+    </body>
+</html>

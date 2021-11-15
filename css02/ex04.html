@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+
+        <style>
+            table {border: 1px solid #000000; border-collapse:collapse;}
+            /*테이블간의여백사이가없어지게하는게collapse*/
+            table>thead>tr>th,table>tbody>tr>td {border: 1px solid #000000;  text-align: center;}
+            table>thead>tr>th {background-color: #aeb3b6;}
+            .txt-left {text-align: left;}
+            tr:hover {background-color: #f4f804;}
+            a:link{color:#0044ff;text-decoration: underline;}/*방문전 링크일때 색*/
+            a:visited{color:#0044ff;text-decoration: underline;}
+            a:hover {text-decoration: underline;}/*마우스 올렸을때 색*/
+            a:active {color:#00ff00;text-decoration: overline;}/*마우스를 클릭하고 떼기전까지 색*/
+        </style>
+
+    </head>
+
+    <body>
+        <h1>mysite</h1>
+        <h2>게시판</h2>
+        <h3>일반게시판</h3>
+        <h4>리스트</h4>
+
+        <table>
+            <colgroup>
+                <col style="width:50px">
+                <col style="width:450px">
+                <col style="width:100px">
+                <col style="width:100px">
+                <col style="width:100px">
+                <col style="width:100px">
+            </colgroup>
+            <thead>
+        
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>글쓴이</td>
+                    <th>조회수</th>
+                    <th>작성일</th>
+                    <th>관리</th>
+
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>123</td>
+                    <td class="txt-left"><a href="./ex04.html">게시판 게시글입니다.</a></td>
+                    <td>정우성</td>
+                    <td>1232</td>
+                    <td>2021-11-03</td>
+                    <td>삭제</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td class="txt-left"><a href="./ex04.html">게시판 게시글입니다.</a></td>
+                    <td>정우성</td>
+                    <td>1232</td>
+                    <td>2021-11-03</td>
+                    <td>삭제</td>
+                </tr>
+
+            </tbody>
+
+
+        </table>
+
+        
+
+    </body>
+
+</html>

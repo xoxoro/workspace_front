@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>실습:버튼만들기</title>
+        <!-- 스타일시트자리
+        버튼의 높이를 주지말고 padding을 주면 됨 -->
+        <style>
+            .box-save {   
+                font-weight: bold; 
+                font-size:20px;
+                font-style: 돋움;
+                width:70px;
+                /*padding: 1px;*/
+                text-align: center; 
+                /*vertical-align: middle;*/
+                background-color:rgb(199, 192, 192); 
+                border: 2px solid grey;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+            .box-del
+                    {   
+                font-weight: bold; 
+                font-size:20px;
+                font-style: 돋움;
+                width:70px;
+                text-align: center;
+                background-color:rgb(231, 160, 160); 
+                border: 2px solid rgb(221, 96, 96);
+                border-radius: 5px;
+                    }
+            .box-ins
+                    {
+                font-weight: bold; 
+                font-size:20px;
+                font-style: 돋움;
+                width:70px;
+                text-align: center;
+                background-color:skyblue; 
+                border: 2px solid skyblue;
+                border-radius: 5px;
+                    }
+                    
+              .box-blue 
+                    {      
+                width: 100px;
+                height: 100px;
+                background-color:rgb(135, 150, 235); 
+                border: 2px solid rgb(151, 69, 189);
+                border-radius: 5px;
+                display: table-cell;
+                text-align: center; 
+                vertical-align: middle;
+                        }
+
+            div:hover 
+                    {
+                color:rgb(255, 255, 255);
+                text-decoration: none; 
+                background-color: rgb(205, 90, 138);
+                    }
+
+            .btn-green
+                {
+                width: 50px;
+                padding: 0px;/*브라우저마다기본패딩값은달라서초기화를시켜주는게좋다*/
+                background-color: cadetblue;
+                border: 1px solid black;
+                border-radius: 5px;
+                text-align: center;
+
+            }
+
+            .btn-login
+            {
+                width: 100px;
+                /*padding: 0px 10px 0px 10px;*/
+                display: inline-block;
+                background-color: rgb(247, 230, 83);
+                border: 1px solid black;
+                border-radius: 5px;
+                text-align: center;
+                cursor: pointer;
+            }
+            a:hover {width:200px; text-decoration:none}
+            a:link {text-decoration: none;}
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="box-save">
+            저장
+        </div>
+        <div class="box-del">
+            삭제
+        </div>
+        <div class="box-ins">
+            수정
+        </div>
+        <div class="box-blue">
+            블루
+        </div>
+        <br>
+        <button class="btn-green" type="submit">저장</button><!--버튼:가로세로조절되고(블록) 한단락은 다차지하지않는(인라인) 인라인-블록-->
+        <br><br>
+        <button type="submit">저장</button>
+        <a class=btn-login href="">로그인</a>
+
+      
+        
+
+    </body>
+
+</html>

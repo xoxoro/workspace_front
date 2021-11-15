@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+    a:link {text-decoration: none;}
+    /*컨텐츠 영역*/
+    #contents #profile-img
+    {
+    float: left;
+    width: 300px;
+    margin: 0px 20px 0px 0px;
+    }
+
+    #contents #greeting
+    {
+    float: left; 
+    }

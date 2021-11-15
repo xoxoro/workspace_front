@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/*css의주석은모양다름*/
+/*클래스이름은 두개까지 가질수있음
+ex)h1#head,.headline.selected
+쩜은 클래스를 의미함,아무것도 안붙이면 태그,#쓰면 아이디*/
+/*id는 class와 다르게 같은 이름을 한번이상 쓸 필요가 없을때 쓰면 적절함*/
+h2 {color:#0070c0;}
+h3 {color:#7030a0;}
+li {color:#ff00ff;}

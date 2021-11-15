@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/*게시판리스트*/
+
+
+/*게시판글쓰기*/
+.sboard
+{
+    width: 70px;
+    float: left;
+    padding: 0px 0px 0px 5px;
+}
+
+
+#main-body ul li
+{
+    margin: 10px 0px 10px 0px;
+  
+}
+
+textarea
+{
+    margin : 0px 0px 0px 5px;
+}
+
+#main-body hr 
+{
+    border: none; width:800px; height:1px; background-color:#dddddd;
+}
+
+#button
+{
+    text-align: center;
+}
+
+.submit
+{
+    width: 60px; height: 30px;
+}
+
+
+/*게시판보기*/
+
+/*게시판수정*/
